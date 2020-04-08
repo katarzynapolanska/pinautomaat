@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="OpdrachtPinautomaat.geldOpnemen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpdrachtPinautomaat"
+             mc:Ignorable="d" 
+             d:DesignHeight="303" d:DesignWidth="570">
+    <Grid x:Name="gInhoud">
+        <WrapPanel HorizontalAlignment="Left" Height="233" Margin="206,70,0,0" VerticalAlignment="Top" Width="354">
+            <Button x:Name="btnTen" Content="10 €" Width="100" Height="104" Margin="2" Click="btnTen_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+            <Button x:Name="btnTwenty" Content="20 €" Width="100" Height="104" Margin="2" Click="btnTwenty_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+            <Button x:Name="btnFifty" Content="50 €" Width="100" Height="104" Margin="2" Click="btnFifty_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+            <Button x:Name="btnHundred" Content="100 €" Width="100" Height="104" Margin="2" Click="btnHundred_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+            <Button x:Name="btnHundredFifty" Content="150 €" Width="100" Height="104" Margin="2" Click="btnHundredFifty_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+            <Button x:Name="btnTwoHundred" Content="200 €" Width="100" Height="104" Margin="2" Click="btnTwoHundred_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="22"/>
+        </WrapPanel>
+        <StackPanel HorizontalAlignment="Left" Height="201" Margin="10,70,0,0" VerticalAlignment="Top" Width="171">
+            <Label Content="Uw keuze" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="161"/>
+            <TextBlock x:Name="txtKeuze" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="151" Margin="10,0,0,0" Background="#26487A6E"/>
+            <Label Content="Uw saldo"/>
+            <TextBlock x:Name="txtSaldo" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="151" Foreground="Black" Margin="10,0,0,0" Background="#26487A6E"/>
+            <Grid Height="64">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="51*"/>
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="11*"/>
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="83*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnOk" Content="OK" Margin="0,25,81,0" Click="btnOk_Click" Grid.ColumnSpan="4" Grid.Column="1" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="15"/>
+                <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="39" Height="39" Click="btnBack_Click" ScrollViewer.CanContentScroll="True" Background="#3F10743D" Foreground="#BFFFFFFF" FontSize="15"/>
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
